@@ -8,12 +8,11 @@ dotenv.config();
 
 //DB connection
 connectDB();
-//parse data
+//parse data mohamed
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/Invoice", InvoiceRoute);
-
 
 //Error Handling
 app.use(GlobalErrorHandling);
